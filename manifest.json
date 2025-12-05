@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "SkipAniaCheck",
+  "version": "1.0.0",
+  "description": "WIXOSS公式サイトの年齢確認ページを自動的にスキップします",
+  "permissions": [
+    "https://www.takaratomy.co.jp/products/wixoss/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.takaratomy.co.jp/products/wixoss/age_check/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "skipaniacheck@shiro-ka.github.io",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
