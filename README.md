@@ -1,0 +1,2 @@
+# SkipAniaCheck
+WIXOSS公式サイトの年齢確認ページをスキップするFirefox拡張機能
